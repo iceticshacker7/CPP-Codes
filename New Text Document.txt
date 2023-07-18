@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    vector<int> v(5);
+    set<int> s;
+    pair<int,int> p;
+    map<int,int> mp;
+    {
+        v.push_back(5);
+        v.push_back(2);
+        v.push_back(3);
+        // for(int i = 0; i < v.size(); ++i)
+        //     cin >> v[i];
+        cout << "VECTOR: ";
+        for(auto i: v)cout << i << ' ';
+    }
+    cout << '\n';
+    s.insert(2);
+    s.insert(5);
+    s.insert(6);
+    s.insert(0);
+    s.insert(5);
+    //printing all the elements of the set
+    cout << "SET: ";
+    for(auto i: s)
+        cout << i << ' ';
+    cout << '\n';
+    p = {5, 6};   
+    cout << "PAIR: ";
+    cout << p.first << ' ' << p.second << '\n';
+    
+    mp.insert({5, 6});
+    mp[2] = 3;
+    cout << "MAP: ";
+    for(auto i: mp)
+        cout << i.first << ' ' << i.second << '\n';
+        
+    
+    
+ 
+    return 0;
+}
+ 
